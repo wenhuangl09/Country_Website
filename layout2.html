@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Resources: 
+      https://www.w3schools.com/html/html_blocks.asp
+-->
+<html>
+  <head>
+    <title>Flexboxes</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+	
+	  #title, #footer{
+		justify-content: center;
+		align-items: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: white;
+	 }
+	 #body{
+		justify-content: center;
+		align-items: center;
+	 	
+	 }
+	 #body div{
+		text-align: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: pink;
+	 }
+	 #link{
+		flex: 1;
+	 }
+	 
+	 #main {
+		flex: 2;
+	 }
+	 #ads {
+		flex:1;
+	 }
+
+
+    </style>
+  </head>
+  <body>      
+  
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="layout1.html">Korean Food</a>
+      <a href="layout2.html">Korean Entertainment</a>
+      <a href="layout3.html">Korean Tourist Spots</a>
+    </nav>
+    
+    <div id="banner" class="container">
+      <div style="text-align:center">
+        <h1> Korean Entertainment </h1>
+      </div>
+    </div>
+
+     <!-- HTML for Layout 2 -->
+	<div id="title" class="container">
+     <h1>Lotte World</h1>
+    </div>
+	
+    <div id="body" class="container">
+      <div id="link">
+        <a href = "https://adventure.lotteworld.com/eng/lotteworld/introduce/business/contentsid/488/index.do"> <img id="korea" src = "LotteWorld.png"></a>
+      </div>
+	  
+	<div id="main" id="korea">
+<p>
+<li>Indoor Theme Park (Lotte World Adventure): This part of the park is the world’s largest indoor theme park. It has over 40 rides, including a 4D cinema, a carousel, and a giant swinging ship. It’s great for all weather conditions since it’s indoors.</li>
+<br>
+<li>Magic Island (Outdoor Park): This area features thrilling outdoor rides like the Atlantis roller coaster, the Gyro Drop, and a giant Ferris wheel that offers fantastic views of the city. It’s set on an artificial island in a lake, giving it a scenic vibe.</li>
+<br>
+<li>Lotte World Mall: Adjacent to the park, this massive shopping center has luxury stores, dining options, and the Lotte World Aquarium, home to thousands of marine species, and Lotte World Tower, a 123-story skyscraper with an observation deck offering panoramic views of Seoul.</li>
+<br>
+<li>Ice Skating Rink: Located in the basement of the indoor theme park, it’s a fun activity especially in winter months.</li>
+<br>
+<li>Cultural Events and Parades: Lotte World offers seasonal performances, parades, and character meet-and-greets. There are often themed shows based on popular movies and cartoons.</li></p>
+      </div>
+	  </div>
+    <!-- Next challenge in layout3.html -->
+  </body>
+</html>

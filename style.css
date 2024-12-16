@@ -1,0 +1,46 @@
+*{
+  font-family:Arial;
+}
+img{
+  width:100%;
+}
+a{
+  text-decoration: none;
+}
+/* Challenge 1: Set display to flex for all elements with a class of "container" */
+.container{
+	display: flex;
+	
+}
+
+/*Challenge 2: Set the flex property to 1 for all hyperlinks in the nav element */
+nav a {
+	flex: 1;
+	
+}
+
+/* Challenge 3: Completely center (horizontally and vertically) the contents inside the element with an id of "banner". Add some padding and change the background color and color of the text to anything you want as long as it remains readable */
+#banner{
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	
+}
+
+#main{
+	padding: 90px;
+	font-size: 20px;
+	border:2px solid green;
+	border-radius:20px;
+}
+#korea{
+	height:530px;
+}
+
+img:hover{
+	filter:sepia(90%);
+	transition: 1s;
+}
+/* Next challenge in layout1.html  */

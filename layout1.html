@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Resources: 
+      https://www.w3schools.com/html/html_blocks.asp
+-->
+<html>
+  <head>
+    <title>Flexboxes</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+      /* Challenge 4: Using internal CSS, add appropriate flexbox properties to each section in the layout to make the web page look like WireframeLayout1.png */
+	  #title, #footer{
+		justify-content: center;
+		align-items: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: white;
+	 }
+	 #body{
+		justify-content: center;
+		align-items: center;
+	 	
+	 }
+	 #body div{
+		text-align: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: pink;
+	 }
+	 #link{
+		flex: 1;
+	 }
+	 
+	 #main {
+		flex: 2;
+	 }
+	 #ads {
+		flex:1;
+	 }
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="layout1.html">Korean Food</a>
+      <a href="layout2.html">Korean Entertainment</a>
+      <a href="layout3.html">Korean Tourist Spots</a>
+    </nav>
+
+    <div id="banner" class="container">
+      <div style="text-align:center">
+        <h1> Korean Food </h1>
+      </div>
+    </div>
+    <hr>
+
+    <!-- HTML for Layout 1 -->
+    <div id="title" class="container">
+     <h1>Korean BBQ</h1>
+    </div>
+
+    <div id="body" class="container">
+      <div id="link">
+		<a href = "https://blog.goldbelly.com/what-is-korean-bbq/"> <img src = "KoreanFood.avif"></a>
+      </div>
+      <div id="main">
+        <p>Korean BBQ is a social and interactive dining experience where you grill meat at the table. It’s usually done with beef, pork, or chicken. Some popular options include samgyeopsal (pork belly), galbi (beef short ribs), and bulgogi (marinated beef).
+
+The meat is cooked on a grill at the table, and you can control how well-done it gets. The meal is accompanied by a variety of side dishes called banchan, like kimchi (fermented vegetables), pickled sides, and rice.
+
+One of the highlights is ssam, where you take a piece of grilled meat, wrap it in lettuce or another leaf with some rice and ssamjang (a savory dipping sauce), and eat it in one bite.
+
+Korean BBQ is typically enjoyed with drinks like soju (Korean liquor) or beer. It’s a communal, fun experience where everyone shares food and cooks together.</p>
+      </div>
+    </div>
+    
+    <!-- Next challenge in layout2.html -->
+  </body>
+</html>

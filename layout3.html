@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Resources: 
+      https://www.w3schools.com/html/html_blocks.asp
+-->
+<html>
+  <head>
+    <title>Flexboxes</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+	
+	  #title, #footer{
+		justify-content: center;
+		align-items: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: white;
+	 }
+	 #body{
+		justify-content: center;
+		align-items: center;
+	 	
+	 }
+	 #body div{
+		text-align: center;
+		border: 2px solid gray;
+		margin: 5px;
+		background-color: pink;
+	 }
+	 #link{
+		flex: 1;
+	 }
+	 
+	 #main {
+		flex: 2;
+	 }
+	 #ads {
+		flex:1;
+	 }
+
+    </style>
+  </head>
+  <body>    
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="layout1.html">Korean Food</a>
+      <a href="layout2.html">Korean Entertainment</a>
+      <a href="layout3.html">Korean Tourist Spots</a>
+    </nav>
+
+    <div id="banner" class="container">
+      <div style="text-align:center">
+        <h1> Korean Tourist Spots </h1>
+      </div>
+    </div>
+	
+	<div id="title" class="container">
+     <h1>Han River</h1>
+    </div>
+    
+    <div id="body" class="container">
+	<div id="link">
+      <a href = "https://www.koreatodo.com/han-river-top-attractions"> <img id = "korea" src = "HanRiver.jpg"></a>
+    </div>
+    
+    <div id="main" id = "korea" style="height:350px;">
+    <p>
+	The Han River has become a beloved spot for both locals and tourists, not only for its natural beauty but also for the unique experiences it offers, including the popular tradition of enjoying delivery food while relaxing by the water. Many visitors take advantage of Seoul's convenient food delivery system, which makes it easy to order a wide variety of meals, including Korean favorites like ramyeon (instant noodles), fried chicken, and traditional banchan (side dishes). It's common to see people sitting by the river, enjoying a casual picnic with their food delivered right to their location. For those craving something more adventurous, the riverbanks are a hub for recreational activities. Visitors can rent bikes and cycle along the extensive bike paths, paddle through the calm waters on kayaks or paddleboards, or even take part in water sports like windsurfing and jet skiing. Additionally, the Han River is home to several sports facilities and outdoor gyms, making it a favorite for joggers and fitness enthusiasts. The dynamic mix of food, fun activities, and stunning views make the Han River an ideal spot for a leisurely day out in Seoul.</p>
+    </div>
+	</div>
+
+  </body>
+</html>
